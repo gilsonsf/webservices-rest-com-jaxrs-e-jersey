@@ -77,4 +77,10 @@ public class Carrinho {
 		return produtos;
 	}
 
+	public String toXML() {
+		XStream xstream = new XStream();
+		String xml = xstream.toXML(this);
+		return xml;
+	}
+
 }
